@@ -1,4 +1,7 @@
 # Chrome-Extension
+
+1. [Webpage Permission](https://github.com/skborey/Chrome-Extension#chrome-extension)
+
 ## Webpage Permission
 
 > Description
