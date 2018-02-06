@@ -9,7 +9,7 @@ Advoid user access G-mail or Facebook in usual mode of Chrome, by close tab of F
 ```
 - chrome.runtime.sendMessage();
 - chrome.runtime.onMessage.addListener();
-- Message Massing
+- Message Passing
 ```
 
 > Process
