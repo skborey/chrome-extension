@@ -5,8 +5,6 @@
 
 ## Webpage Permission
 
-> Description
-
 Advoid user access G-mail or Facebook in usual mode of Chrome, by close tab of Facebook or G-mail then open them in Incognito mode
 
 > API, method, event, keywords
