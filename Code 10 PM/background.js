@@ -9,6 +9,7 @@ function code10pm() {
 	chrome.tabs.getAllInWindow(null, function (tabs) {
 		for (var i = 0; i < tabs.length; i++) {
 			chrome.tabs.remove(tabs[i].id);
+			//console.log("- Tab id : " + tabs[i].id);
 		}
 	});
 
@@ -17,15 +18,7 @@ function code10pm() {
 			"url": "https://ssli.ebayimg.com/images/g/x-YAAOSw5OpZuXLY/s-l640.jpg",
 			"focused": true,
 			"incognito": true
-		}, function (window) { });
-
-	var getAlarm = chrome.alarms.get(alarmName);
-	getAlarm.then(function () {
-		var clearAlarm = chrome.alarms.clear(alarmName);
-		clearAlarm.then(function (wasCleared) {
-			console.log("Alarm was clear : " + wasCleared);
-		});
-	});
+		}, function (window) { });	
 }
 
 console.log("now " + hh + "hh " + mm + "mm");
@@ -39,7 +32,7 @@ else {
 	var mm_left = hh_left * 60 + (60 - mm);
 	console.log("10 pm : " + hh_left + "h + 60 - " + mm + "mm = " + mm_left + "mm left");
 	console.log("create event alarm in " + mm_left + "mm");
-
+	alert("Event will start in " + mm_left + "mm :) ");
 	//set event
 	chrome.alarms.create(alarmName, {
 		delayInMinutes: mm_left
