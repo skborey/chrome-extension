@@ -1,7 +1,12 @@
 # Chrome-Extension
 
+0. [Basic extension](https://github.com/skborey/Chrome-Extension#basic-extension) :white_check_mark:
 1. [Webpage Permission](https://github.com/skborey/Chrome-Extension#webpage-permission) :white_check_mark:
 2. [Code10PM](https://github.com/skborey/Chrome-Extension#code10pm) :arrows_counterclockwise:
+
+## Basic Extension
+
+This include the basic requirement for starting create an extension. This include icon, manifest.json with basic require object, message passing from content script to background script, extension popup.
 
 ## Webpage Permission
 
