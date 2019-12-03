@@ -18,7 +18,8 @@ chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
 				if (form) {
 					var el = form.getElementsByTagName('input');
 					for (var i = 0; i < el.length; ++i) {
-						if (el[i].type == "email") el[i].value = "autoinput@email.com";
+						if (el[i].type == "email") el[i].value = "skborey.dev@gmail.com";
+						else if (el[i].id=='ivta_register_pass' || el[i].id=='ivta_register_confirm_pass') el[i].value = "aaa123";
 						else if (el[i].id != 'ivta_register_submit_btn' ) el[i].value = "a";
 					}
 
