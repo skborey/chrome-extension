@@ -1,9 +1,13 @@
 {
-  "name": "Daily Color Tabs",
+  "name": "Daily Tab Color",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
   },
-  "action": {}
+  "action": {},
+  "permissions": [
+    "tabs",
+    "tabGroups"
+  ]
 }
