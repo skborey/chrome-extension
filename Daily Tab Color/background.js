@@ -15,7 +15,8 @@ const groupOptionsByDay = [
 ]
 
 chrome.runtime.onStartup.addListener( async () => {
-  
+  const blankTab = await getCurrentTab()
+ 
   // Open all tabs
   const tabIds = [];
   for (const url of myTabUrls) {
@@ -31,4 +32,13 @@ chrome.runtime.onStartup.addListener( async () => {
     groupId,
     groupOptionsByDay[new Date().getDay()]
   )
+
+  await chrome.tabs.remove(blankTab.id)
 })
+
+async function getCurrentTab() {
+  let queryOptions = { active: true, lastFocusedWindow: true };
+  // `tab` will either be a `tabs.Tab` instance or `undefined`.
+  let [tab] = await chrome.tabs.query(queryOptions);
+  return tab;
+}
