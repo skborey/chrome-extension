@@ -3,6 +3,7 @@
 0. [Basic extension](https://github.com/skborey/Chrome-Extension#basic-extension) :white_check_mark:
 1. [Webpage Permission](https://github.com/skborey/Chrome-Extension#webpage-permission) :white_check_mark:
 2. [Code10PM](https://github.com/skborey/Chrome-Extension#code10pm) :arrows_counterclockwise:
+3. [Daily Tab Color](https://github.com/skborey/Chrome-Extension#daily-tab-color) :arrows_counterclockwise:
 
 ## Basic Extension
 
@@ -63,3 +64,8 @@ Alarm
 
 - [Alarm](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/alarms/create) to create schedule
 - [Content script run on active tab, background script run on whole window](https://stackoverflow.com/questions/31107446/chrome-extension-alarms-create-undefined)
+
+
+## Daily Tab Color
+
+To open daily work website when open the chrome and group those website to agroup with tile of day and color base on that day. E.g. If today is monday, those websites are under group name "Monday" with group color of `yellow`.
